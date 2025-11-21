@@ -1,0 +1,181 @@
+@import "colors.scss";
+@import "nav.scss";
+
+/* Variables */
+$fontFamily1: Arial, Helvetica, Sans-Serif;
+$fontFamily2: 'Sacramento', cursive;
+$fontSizeH1: 3em;
+$fontSizeH2: 2.5em;
+$fontSizeH3: 2em;
+$fontSizeSmall: 0.85em;
+
+/* Base */
+html {
+  // Operations
+  font-size: 0.8em + 0.2;       // 1
+  width: (100% / 2) + 50%;      // 75%
+}
+
+body {
+  font-family: $fontFamily1;
+  background: $backgroundColor1;
+}
+
+header {
+  height: 50px;
+}
+
+/* MAIN WRAPPER*/
+main {
+  background: $mainColor;
+  width: 1450px;
+  min-height: 535px;
+  padding: 1.5%;
+  margin: 0 auto;
+
+  /* - index - */
+  #intro-image {
+    float: left;
+    width: 800px;
+
+    img {
+      width: 800px;
+    }
+  }
+
+  #intro-text {
+    width: 550px;
+    height: 435px;
+    float: left;
+    background: $sectionColor;
+    text-align: center;
+    padding-top: 5em;
+
+    h3 {
+      font-size: $fontSizeH3;
+      color: $color3;
+    }
+
+    span {
+      font-family: $fontFamily2;
+      font-size: 2em;
+    }
+  }
+
+  /* - Register Page - */
+
+  /* Grey */
+  #register-left {
+    float: left;
+    width: 600px;
+    height: 400px;
+    background: $sectionColor;
+    text-align: center;
+    padding-top: 6rem;
+    margin-right: 100px;
+
+    span {
+      font-family: $fontFamily2;
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+      line-height: 1.5;
+    }
+  }
+
+  /* Right Section */
+  #register-right {
+    float: left;
+    width: 600px;
+    padding-top: 2rem;
+    margin-left: 50px;
+
+    /* Error */
+    .messages {
+      margin-bottom: 0.9rem;
+      font-size: 0.9rem;
+
+      .error {
+        color: red;
+        margin: 0.1rem 0;
+
+        .label {
+          font-weight: bold;
+        }
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      color: $color3;
+    }
+
+    form {
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.3rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+      }
+    }
+
+    .register-button {
+      width: 100%;
+      padding: 0.6rem;
+      color: white;
+      background: $backgroundColor1;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Success */
+    .success-message {
+      text-align: center;
+      margin-top: 6rem;
+      font-size: 1.6rem;
+      color: $color3;
+    }
+  }
+}
+
+/* Footer */
+footer {
+  width: 1350px;
+  margin: 2em auto;
+  padding-left: 80px;
+  font-size: $fontSizeSmall;
+}
+
+/* Buttons  */
+button {
+  color: $color4;
+  width: 100px;
+  height: 40px;
+  background: $backgroundColor1;
+  margin-top: 2em;
+}
+
+.submit-buttton {
+  @extend button;
+  border: 1px $color3;
+}
