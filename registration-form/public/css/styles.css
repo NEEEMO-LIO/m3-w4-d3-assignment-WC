@@ -58,3 +58,44 @@ body {
   .listing-table th:first-child {
     border-right: 1px solid #666;
   }
+
+  /* === Background color for listing page === */
+body.listing-page {
+  background-color: #CC9D09;   
+  padding: 40px 0;
+}
+
+/* === Container that centers the table === */
+.table-container {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* === Table === */
+.listing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+/* Table header */
+.listing-table th {
+  background: #000;
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Table rows */
+.listing-table td {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+
+/* Add border between columns */
+.listing-table td:first-child,
+.listing-table th:first-child {
+  border-right: 1px solid #666;
+}
